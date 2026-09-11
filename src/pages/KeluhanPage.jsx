@@ -88,7 +88,6 @@ export default function RekomendasiPage() {
           rekomendasi racikan jamu Jawa yang sesuai.
         </p>
 
-        {/* ===== Layout 2 kolom: body kiri, info kanan ===== */}
         <div className="mt-10 grid lg:grid-cols-2 gap-8 items-start">
           {/* KIRI — ilustrasi tubuh + kategori */}
           <div className="border border-stone-200 rounded-2xl p-6 lg:sticky lg:top-24">
@@ -139,7 +138,7 @@ export default function RekomendasiPage() {
             </div>
           </div>
 
-          {/* KANAN — daftar gejala, keparahan, tombol */}
+          {/* daftar gejala, keparahan, tombol */}
           <div className="space-y-6">
             {/* Daftar gejala */}
             <div className="border border-stone-200 rounded-2xl p-6">
@@ -215,7 +214,7 @@ export default function RekomendasiPage() {
               </div>
             </div>
 
-            {/* Tombol cari ramuan — sekarang inline, bukan sticky bottom */}
+            {/* Tombol cari ramuan */}
             <div className="flex items-center justify-between border border-stone-200 rounded-2xl p-6">
               <div>
                 <p className="text-xs text-stone-400">Status Pilihan</p>
