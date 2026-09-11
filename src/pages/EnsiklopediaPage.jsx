@@ -83,7 +83,7 @@ export default function EnsiklopediaPage() {
           />
         </div>
 
-        {/* ===== Katalog Tanaman — grid 3-4 kolom ===== */}
+        {/* ===== Katalog Tanaman ===== */}
         {tab === "tanaman" && (
           <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {filteredTanaman.map((t) => (
@@ -105,7 +105,6 @@ export default function EnsiklopediaPage() {
           </div>
         )}
 
-        {/* ===== Racikan Jamu — grid 3 kolom ===== */}
         {tab === "racikan" && (
           <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {filteredRacikan.map((r) => (
