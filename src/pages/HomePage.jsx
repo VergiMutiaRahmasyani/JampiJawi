@@ -58,7 +58,7 @@ const artikel = [
 export default function HomePage() {
   return (
     <div className="bg-white text-stone-800">
-      {/* ============ HERO ============ */}
+      {/* HERO */}
       <section className="max-w-7xl mx-auto px-6 pt-16 pb-20 grid lg:grid-cols-2 gap-12 items-center">
         <div>
           <span className="inline-flex items-center gap-2 text-xs font-medium text-emerald-700 bg-emerald-50 px-3 py-1.5 rounded-full">
@@ -124,7 +124,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ============ MASALAH ============ */}
+      {/*  MASALAH */}
       <section className="bg-stone-50 py-20">
         <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-start">
           <div className="grid grid-cols-2 gap-4">
@@ -178,7 +178,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ============ 3 LANGKAH ============ */}
       <section className="py-20">
         <div className="max-w-3xl mx-auto text-center px-6">
           <span className="text-xs font-semibold text-emerald-700 tracking-wide">CARA KERJA</span>
@@ -211,7 +210,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ============ KATEGORI GEJALA ============ */}
+      {/*  KATEGORI GEJALA  */}
       <section className="bg-stone-50 py-20">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-wrap justify-between items-end gap-4">
@@ -244,7 +243,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ============ ARTIKEL PREVIEW — carousel ============ */}
+      {/*  ARTIKEL PREVIEW  */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-wrap justify-between items-end gap-4">
@@ -284,7 +283,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ============ CTA FINAL ============ */}
+      {/* button bawah sebelum footer  */}
       <section className="max-w-7xl mx-auto px-6 pb-20">
         <div className="bg-gradient-to-br from-emerald-800 to-emerald-950 rounded-3xl px-8 py-16 text-center text-white">
           <span className="text-xs font-semibold text-emerald-300 tracking-wide">MULAI LANGKAH SEHATMU</span>
