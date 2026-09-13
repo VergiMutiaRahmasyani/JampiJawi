@@ -1,18 +1,20 @@
 import { Link } from "react-router-dom";
 import { Leaf, Mail, Globe, MapPin } from "lucide-react";
-
-const menuUtama = [
-  { label: "Beranda", to: "/" },
-  { label: "Deteksi Gejala", to: "/rekomendasi" },
-  { label: "Ensiklopedia Tanaman", to: "/ensiklopedia" },
-  { label: "Profil", to: "/profil" },
-];
+import { useLanguage } from "../../context/LanguageContext";
 
 export default function Footer() {
+  const { t } = useLanguage();
+
+  const menuUtama = [
+    { label: t("nav.beranda"), to: "/" },
+    { label: t("nav.deteksi"), to: "/keluhan" },
+    { label: t("nav.ensiklopedia"), to: "/ensiklopedia" },
+    { label: t("footer.profil"), to: "/profil" },
+  ];
+
   return (
     <footer className="bg-[#0b1d17] text-stone-300">
       <div className="max-w-7xl mx-auto px-6 py-14 grid md:grid-cols-3 gap-10">
-        {/* Kolom 1 — brand */}
         <div>
           <div className="flex items-center gap-2 font-semibold text-white">
             <span className="w-7 h-7 rounded-full bg-emerald-700 flex items-center justify-center">
@@ -21,15 +23,13 @@ export default function Footer() {
             Jampi Jawi
           </div>
           <p className="mt-4 text-sm text-stone-400 max-w-xs">
-            Platform kecerdasan herbal dan pengobatan tradisional Nusantara
-            terkurasi berbasis teknologi untuk kesehatan alami keluarga.
+            {t("footer.deskripsi")}
           </p>
         </div>
 
-        {/* Kolom 2 — menu utama */}
         <div>
           <p className="text-xs font-semibold text-emerald-400 tracking-wide mb-4">
-            MENU UTAMA
+            {t("footer.menuUtama")}
           </p>
           <ul className="space-y-2 text-sm">
             {menuUtama.map(({ label, to }) => (
@@ -42,10 +42,9 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Kolom 3 — kontak */}
         <div>
           <p className="text-xs font-semibold text-emerald-400 tracking-wide mb-4">
-            KONTAK & KONSULTASI
+            {t("footer.kontak")}
           </p>
           <ul className="space-y-3 text-sm text-stone-400">
             <li className="flex items-center gap-2">
@@ -55,19 +54,18 @@ export default function Footer() {
               <Globe size={14} /> www.jampijawi.id
             </li>
             <li className="flex items-center gap-2">
-              <MapPin size={14} /> Bali & Yogyakarta, Indonesia
+              <MapPin size={14} /> {t("footer.alamat")}
             </li>
           </ul>
         </div>
       </div>
 
-      {/* Bottom bar */}
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-6 py-5 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-stone-500">
-          <p>© 2026 Jampi Jawi. Hak Cipta Dilindungi Undang-Undang.</p>
+          <p>© 2026 Jampi Jawi. {t("footer.hakCipta")}</p>
           <div className="flex gap-5">
-            <a href="#" className="hover:text-white">Kebijakan Privasi</a>
-            <a href="#" className="hover:text-white">Syarat & Ketentuan</a>
+            <a href="#" className="hover:text-white">{t("footer.kebijakan")}</a>
+            <a href="#" className="hover:text-white">{t("footer.syarat")}</a>
           </div>
         </div>
       </div>

@@ -17,7 +17,6 @@ export default function ArtikelHorizontalSection({ artikel }) {
 
       if (scrollableHeight <= 0) return;
 
-      // progress 0 → 1 selama section masih "dipinning"
       const raw = -rect.top / scrollableHeight;
       const clamped = Math.min(Math.max(raw, 0), 1);
       setProgress(clamped);
@@ -28,7 +27,6 @@ export default function ArtikelHorizontalSection({ artikel }) {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // seberapa jauh track harus digeser (total lebar track - lebar layar)
   const maxTranslate = trackRef.current
     ? trackRef.current.scrollWidth - window.innerWidth
     : 0;
