@@ -54,7 +54,7 @@ export default function Footer() {
               <Globe size={14} /> www.jampijawi.id
             </li>
             <li className="flex items-center gap-2">
-              <MapPin size={14} /> {t("footer.alamat")}
+              <MapPin size={14} /> Bali & Yogyakarta, Indonesia
             </li>
           </ul>
         </div>

@@ -96,6 +96,7 @@ export default function EnsiklopediaPage() {
           />
         </div>
 
+        {/* ===== Katalog Tanaman — grid 3-4 kolom ===== */}
         {tab === "tanaman" && (
           <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {filteredTanaman.map((item) => (

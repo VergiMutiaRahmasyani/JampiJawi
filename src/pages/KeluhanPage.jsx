@@ -155,6 +155,7 @@ export default function KeluhanPage() {
             </div>
           </div>
 
+          {/* KANAN — daftar gejala, keparahan, tombol */}
           <div className="space-y-6">
             <div className="border border-stone-200 rounded-2xl p-6">
               <div className="flex items-center justify-between">
@@ -221,6 +222,7 @@ export default function KeluhanPage() {
               </div>
             </div>
 
+            {/* Tombol cari ramuan — sekarang inline, bukan sticky bottom */}
             <div className="flex items-center justify-between border border-stone-200 rounded-2xl p-6">
               <div>
                 <p className="text-xs text-stone-400">Status Pilihan</p>
